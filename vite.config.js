@@ -8,7 +8,7 @@ const __dirname = path.resolve();
 export default defineConfig({
   build: {
     rollupOptions: {
-      external: ['/images/profile.png'],
+      external: ['/images/portifiol.PNG'],
     },
   },
   plugins: [vue(), vueJsx()],

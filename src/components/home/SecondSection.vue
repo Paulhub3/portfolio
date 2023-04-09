@@ -8,7 +8,7 @@
             <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500"  class="px-5 py-5 bg-white rounded-md shadow-2xl lg:w-7/12 drop-shadow-2xl">
 
                 <div class="px-5 py-5 bg-black rounded-md shadow-inner">
-                    <img src="/images/profile.png" class="mx-auto transition ease-in-out duration-400 hover:scale-105" alt="profile-image">
+                    <img src="/images/portifiol.PNG" class="mx-auto transition ease-in-out duration-400 hover:scale-105" alt="profile-image">
                 </div>
 
             </div>
