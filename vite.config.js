@@ -5,9 +5,11 @@ import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  rollupOptions: {
-    external: ["/images/profile.png"],
+export default({
+  build: {
+    rollupOptions: {
+      external: ["/images/profile.png"],
+    },
   },
   plugins: [vue(), vueJsx()],
   resolve: {
