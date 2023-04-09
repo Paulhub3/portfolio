@@ -5,14 +5,14 @@
       <div class="space-y-3">
         <h3 data-aos="fade-up" data-aos-duration="3000"
           style="font-family: 'Montserrat', sans-serif"
-          class="text-3xl text-center font-medium text-gray-800 tracking-wider"
+          class="text-xl md:text-3xl text-center font-medium text-gray-800 tracking-wider"
         >
           Frequently Asked Questions
         </h3>
 
         <p data-aos="zoom-in-up" data-aos-duration="3000"
           style="font-family: 'Montserrat', sans-serif"
-          class="text-sm font-medium tracking-wider text-center text-gray-800 px-4 md:px-0 md:w-5/12 mx-auto"
+          class="text-xs md:text-sm font-medium tracking-wider text-center text-gray-800 px-4 md:px-0 md:w-5/12 mx-auto"
         >
           There are some questions I usually get when conversing with my clients. Click to
           toggle the answers, and if you've' got some more questions , shoot me a message
