@@ -1,21 +1,18 @@
-import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
-import vueJsx from '@vitejs/plugin-vue-jsx';
-import path from 'path';
+import { fileURLToPath, URL } from 'node:url'
 
-const __filename = new URL(import.meta.url).pathname;
-const __dirname = path.dirname(__filename);
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  build: {
-    rollupOptions: {
-      external: ['/images/profile.png'],
-    },
+  rollupOptions: {
+    external: ["/images/profile.png"],
   },
   plugins: [vue(), vueJsx()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-    },
-  },
-});
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    }
+  }
+})
