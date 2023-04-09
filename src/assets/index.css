@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* landing page two buttons */
+/* From uiverse.io by @Ali-Tahmazi99 */
+.button {
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+}
+
+.button::before,
+.button::after {
+content: '';
+position: absolute;
+top: 0;
+width: 0;
+height: 100%;
+transform: skew(15deg);
+transition: all 0.5s;
+overflow: hidden;
+z-index: -1;
+}
+
+.button::before {
+left: -10px;
+background: #114ba1;
+}
+
+.button::after {
+right: -10px;
+background: #4a7ecc;
+}
+
+.button:hover::before,
+.button:hover::after {
+width: 58%;
+}
+
+.button:hover {
+color: #ffffff;
+transition: 0.3s;
+}
+
+.button {
+color: #ffffff;
+font-size: 18px;
+transition: all 0.3s ease-in;
+}
+
+
+
+
+/* Second Section buttons */
+.cv-btn {
+--width: 200px;
+--height: 50px;
+--tooltip-height: 35px;
+--tooltip-width: 90px;
+--gap-between-tooltip-to-button: 18px;
+--button-color: #ffffff;
+--tooltip-color: #fff;
+width: var(--width);
+height: var(--height);
+background: var(--button-color);
+color: #114ba1;
+position: relative;
+text-align: center;
+border-radius: 0.35em;
+font-family: "Arial";
+transition: background 0.3s;
+}
+
+
+.text {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.cv-btn-wrapper,.text,.icon {
+overflow: hidden;
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+color: #114ba1;
+}
+
+.text {
+top: 0
+}
+
+.text,.icon {
+transition: top 0.5s;
+}
+
+.icon {
+color: #fff;
+top: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.cv-btn:hover {
+background: #114ba1;
+}
+
+.cv-btn:hover .text {
+top: -100%;
+}
+
+.cv-btn:hover .icon {
+top: 0;
+}
+
+.cv-btn:hover:before,.button:hover:after {
+opacity: 1;
+visibility: visible;
+}
+
+.cv-btn:hover:after {
+bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.cv-btn:hover:before {
+bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
+
+/* Second Section Card */
+.card {
+width: 220px;
+height: 110px;
+border-radius: 20px;
+background: #ffffff;
+box-shadow: 15px 15px 30px #bebebe,
+           -15px -15px 30px #ffffff;
+}
+
+.feature-card{
+border-radius: 10px;
+box-shadow: 15px 15px 30px #bebebe,
+           -15px -15px 30px #ffffff;
+}
